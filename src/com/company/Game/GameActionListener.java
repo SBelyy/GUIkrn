@@ -23,7 +23,7 @@ public class GameActionListener implements ActionListener {
 
             if(!updateByPlayersData(board)) {
                 if (board.isFull()) {
-                    board.getGame().showMessage("Ничья!");
+                    board.getGame().showMessage("Ничья! Расходимся!");
                     board.emptyField();
                 } else {
                     updateByAiData(board);
